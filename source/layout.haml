@@ -9,6 +9,14 @@
       %header
         .row
           .span6
-            %h1 Candy's Blog
+            %h1
+              %a{:href => '/'} Candy's Blog
+
+            .subnav
+              %ul.nav.nav-pills
+                %li
+                  %a{:href => '/blog.html'} Blog
+                %li
+                  %a{:href => '/photo.html'} Photo
       .page_container.span11
         = yield
